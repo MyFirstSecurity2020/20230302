@@ -10,8 +10,9 @@
 - 磁碟與裝置管理(device management)
 - 日誌管理
 - 系統安全設定(配置)與維護
-- [CentOS 8 Linux 系統管理與一線運維實戰](https://www.tenlong.com.tw/products/9787111696421?list_name=srh)
-- [Mastering Ubuntu Server - Fourth Edition](https://www.packtpub.com/product/mastering-ubuntu-server-fourth-edition/9781803234243)
+- 參考書籍
+  - [CentOS 8 Linux 系統管理與一線運維實戰](https://www.tenlong.com.tw/products/9787111696421?list_name=srh)
+  - [Mastering Ubuntu Server - Fourth Edition](https://www.packtpub.com/product/mastering-ubuntu-server-fourth-edition/9781803234243)
 
 ### 學習各種linux伺服器架設與管理 + 安全強化技術
 - 建置你的網站伺服器(web server)
@@ -44,6 +45,7 @@
 - 在樹莓派Raspberry Pi 400 安裝Ubuntu 
   - [【開箱文】Raspberry Pi 400 介紹與 Ubuntu 系統安裝](https://www.circuspi.com/index.php/2021/02/09/raspberry-pi-400-ubuntu/)
 - [Top 10 Media Server Software for Music Streaming on Raspberry Pi](https://circuitdigest.com/article/top-media-server-software-for-music-streaming-on-raspberry-pi)
+
 ### 學習各種linux安全工具
 - 【推薦書籍】
   - [LINUX FIREWALLS ：善用 NFTABLES 等超強工具捍衛 LINUX 防火牆的安全性, 4/e (中文版)](https://www.tenlong.com.tw/products/9789864344239?list_name=srh)
