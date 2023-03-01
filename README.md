@@ -11,15 +11,12 @@
   - 步驟3:匯入你要用的linux  [[YOUTUBE教學錄影]](https://youtu.be/GTpQR7fZcwE)
 - 學生預先作業:請學生預先申請你的 [github](https://github.com/)  ~ 請上網Google 一下申請辦法
 
-# 上課所使用的平台
+# 上課所使用的平台:請參看你的錄取通知書
 - CTF平台解題(平常沒開放~只有上課期間才會開放):請參看你的錄取通知書
 - Discord課程討論區:請參看你的錄取通知書
   - 嚴格禁止上傳答案(違背者取消證書|且不得參與後續研習活動)
 - 上課簽到簿:請每日上課不要遲到
-  - [2/11 簽到簿](https://forms.gle/wvuy8prixdNtkY2z9)
-  - [2/12 簽到簿](https://forms.gle/zhP9Q5EYPzzRxvB88)
-- [問卷調查](https://forms.gle/YUYmUJ16YFjvC8te6)
-  - (最後填寫!一定要填寫,不然沒有證書) 
+- 問卷調查:上完課後再填寫!一定要填寫,不然沒有證書 
   - 問卷調查須正確填寫CTF註冊的使用者ID 以供驗證解題數作為通過課程考核的依據
 
 # 開場白[[0211課程的錄影]](https://youtu.be/YvQH03hj8mI)
