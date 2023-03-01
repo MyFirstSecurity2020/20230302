@@ -1,8 +1,7 @@
-# Linux資安技術入門
-- 本次課程採用實體資安教學模式以協助學生使用虛擬化技術(在Windows作業系統上安裝Virtualbox,然後匯入linux)學習linux
-- 完整的SecurityFoscusOnline2023課程 ~ 請參閱 [完整上課資訊20230211](https://github.com/MyFirstSecurity2020/20230211)
-- 實體教學環境
-  - 預先作業:本課程使用虛擬機匯入Kali Linux進行教學
+# Linux資安技術入門 [[請先點選觀看~課程說明與進行方式()]]()
+- 本次課程協助學生使用虛擬化技術(在Windows作業系統上安裝Virtualbox,然後匯入linux)學習linux
+- 完整的SecurityFoscusOnline2023課程 ~ 請參閱 [完整上課資訊](./Full.md)
+- 預先作業自建實體教學環境:本課程使用虛擬機匯入Kali Linux進行教學
   - 步驟1:在你的電腦下載 [virtual box](https://www.virtualbox.org/wiki/Downloads) 並安裝完成 [Virtualbox安裝:YOUTUBE影片](https://youtu.be/FC0CX71aGnc)
   - 步驟2:點選資料下載點, 下載這些龐大的系統
     - 本課程會用到的Kali Linux(比較舊的版本2019) [下載點](https://drive.google.com/file/d/1m620Z7KAOSUOLdFH92FYLE2NINb-vJsn/view?usp=sharing)
@@ -12,25 +11,9 @@
   - 步驟3:匯入你要用的linux  [[YOUTUBE教學錄影]](https://youtu.be/GTpQR7fZcwE)
 - 學生預先作業:請學生預先申請你的 [github](https://github.com/)  ~ 請上網Google 一下申請辦法
 
-# 上課模式
-- 請務必先聽完如何使用本課程與相關規範
-- SecurityFoscusOnline2023課程採底下種模式進行:(1)預錄模式 (2)Google Meet線上直播模式 (3)實體資安教學模式
-- 此次課程主要採 (3)實體資安教學模式,部分解題採預錄模式(就是錄影後,放在YOUTUBE讓你觀看學習的啦)
-
 # 上課所使用的平台
-- [立馬點選加入線上上課平台(Google Meet)上課去]()
-  - 8:50開放,9:20關閉連結(遲到太久 ==>就不要參加| 以後會更嚴格: 遲到==>就不要參加)
-  - 參與的觀摩教師可自行安排登入時間,也請聯繫小編
-- [CTF平台解題(平常沒開放~只有上課期間才會開放)](https://120.114.62.213/)
-  - CTF平台會記錄解題的時間,請在上課及開放期間解完你會解的題目
-  - 需要做學習歷程的同學,請及早多做準備(先將解題過程使用Windows的剪取工具解貼到你的powerpoint==>後續再加上你的心得)
-  - 學習歷程報告盡量強調解題原理,不要只有答案及畫面
-  - 平台原則上在上課後當天就會關閉 ==> 你要在兩天內完成會解的題目 ==>請配合時間|不要要求延長賽
-  - 燃燒你的資安戰鬥力吧 ! 想想看 CTF戰隊選手兩三天內就要打完戰 你還有時間摸辜錒
-  - 專注!專注!再專注!專注的學習 才是 王道!
-  - 極限學習的模式:在極短時間內掌握學習主題的深刻內涵 
-    - 三天內或三小時把C或C++學會?基本的~ 多深刻? 語法理解 ? 還是 ..就看你的 樓!
-- [Discord課程討論區：https://discord.gg/yWCfDtQjzJ 同學互相討論區](https://discord.gg/yWCfDtQjzJ)
+- CTF平台解題(平常沒開放~只有上課期間才會開放):請參看你的錄取通知書
+- Discord課程討論區:請參看你的錄取通知書
   - 嚴格禁止上傳答案(違背者取消證書|且不得參與後續研習活動)
 - 上課簽到簿:請每日上課不要遲到
   - [2/11 簽到簿](https://forms.gle/wvuy8prixdNtkY2z9)
