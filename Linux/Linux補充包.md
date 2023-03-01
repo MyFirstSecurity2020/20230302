@@ -1,0 +1,173 @@
+# agenda
+- 1_認識Linux作業系統:多人使用與多工作業
+- 2_Linux 核心(kernel) 與 shell
+- 3_Linux 發行版本(distributions)
+- 4_linux目錄結構
+
+## 1.認識linux作業系統:多人使用與多工作業
+- Linux…是一種自由和開放原始碼(open source)的UNIX-like作業系統。
+- The [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel) is a free and open-source, monolithic, modular,multitasking(多工), Unix-like operating system kerne
+- 該作業系統的核心(kernel)由林納斯·托瓦茲Linus Torvalds在1991年首次發布。
+- 核心原始碼公布在github ==> [Linux kernel source tree](https://github.com/torvalds/linux)
+- [Linux 基金會(Linux Foundation|LF)](https://www.linuxfoundation.org/)
+  - 是一家非營利性技術貿易協會，致力於促進，保護和推進Linux和協同開發，並支援「歷史上最大的共享技術資源」
+  - 2000年的開原始碼發展實驗室（OSDL）與自由標準組織（FSG）合併後從而成為現在的組織。
+  - Linux基金會贊助Linux創始人Linus Torvalds和主管維護者Greg Kroah-Hartman的工作 並由領導Linux和開源公司的支援，包括許多知名的科技公司，以及來自全世界的開發商
+  - Linux基金會通過活動，培訓和認證以及開源專案擴大了服務範圍。
+## 2_核心(kernel) 與 shell
+- Linux kernel(內核|核心)::[英文版WIKI說明](https://en.wikipedia.org/wiki/Linux_kernel) [中文版WIKI說明](https://zh.wikipedia.org/wiki/Linux%E5%86%85%E6%A0%B8)
+  - Linux核心是一個單體核心，支援真正的搶占式多工處理（於使用者態，和版本2.6系列之後的核心態）、虛擬記憶體、共享庫、請求分頁、共享寫時複製可執行體（通過核心同頁合併）
+、記憶體管理、Internet協定族和執行緒等功能。
+  - [1991年傳奇](https://groups.google.com/g/comp.os.minix/c/dlNtH7RRrGA/m/SwRavCzVE7gJ?hl=en&pli=1)
+    - 芬蘭資訊科學系學生 Linus Torvalds 在 Usenet 新聞群組 comp.os.minix 上發佈了一種替代 Minix 核心的早期版本 
+    - [JUST FOR FUN:LINUX創始人托瓦茲自傳](https://www.eslite.com/product/1001129761345524)
+    - [Linux核心地圖(Map of the Linux kernel)](https://makelinux.github.io/kernel/map/) 
+    - 大學/研究所有一門課 【Linux 作業系統核心】就是在講底下內容與程式實作
+    - 有許多模組化的功能與系統程式 ==> 如 記憶體管理子系統   行程排程子系統
+   - 1992年Tanenbaum–Torvalds debate 塔能鮑姆-托瓦茲辯論 [摘錄自WIKI](https://www.wikiwand.com/zh-tw/%E5%A1%94%E8%83%BD%E9%AE%91%E5%A7%86-%E6%89%98%E7%93%A6%E8%8C%B2%E8%BE%AF%E8%AB%96)
+     - 為了教學上的方便，"Andy" Tanenbaum模倣Version 7 Unix風格，自行創作了一個無版權爭議的作業系統，Minix，讓學生可以在大學中繼續學習發展作業系統，並閱讀到完整原始碼。
+     - 這是一個小型的類Unix作業系統，原始碼附屬在Tanenbaum寫作的教科書中，在1987年首度釋出。原始碼大小為三個磁碟片，原始碼完整公開，在購買到磁片後，讀者可以自行編譯與安裝，也可以自由閱讀與修改。
+     - Linus Torvalds在芬蘭就讀大學時，其祖父贈送他一台Intel 80386個人電腦。他不滿其附贈的DOS系統效能太差，在閱讀了Tanenbaum教授的教科書後，他決定根據教科書上的內容，自行創作自己的作業系統。
+     - 1991年，Linus Torvalds在Usenet新聞組comp.os.minix登載帖子，向社群釋出了他自行創作的作業系統內核完整原始碼，也就是日後的Linux。 
+     - 1992年在Usenet討論群組（新聞組）comp.os.minix上發起的一場辯論，主角為Minix創作者Tanenbaum與Linux核心原始作者Linus Torvalds
+     - 討論的主題在於作業系統內核架構的選擇
+       - "Andy" Tanenbaum認為，以微內核架構設計的作業系統，在理論上，比宏內核架構更加優越，主張Linux應該以微內核架構來進行重新設計。
+       - 但是Linus Torvalds以開發實務上的觀點展開反擊，陳述Linux選擇宏內核架構進行開發的理由，並比較Minix與Linux的效能差異。
+   - [GNU/Linux命名爭議 GNU/Linux naming controversy](https://zh.wikipedia.org/wiki/GNU/Linux%E5%91%BD%E5%90%8D%E7%88%AD%E8%AD%B0)
+     - GNU/Linux命名爭議，是在自由及開放原始碼軟體社群成員內的，關於是應該把使用GNU軟體與Linux核心組合之作業系統稱為「GNU/Linux」還是「Linux」的爭議。
+     - GNU/Linux這一名稱是由`自由軟體基金會Free Software Foundation(FSF)`的創立者與GNU計劃的發起人Richard Stallman所提出的。
+     - GNU的開發者與其支持者，希望以該名稱來作為此作業系統的正式名稱。他們認為，此作業系統，包括了GNU系統軟體套件與Linux核心，使用GNU/Linux這個名稱，可以良好概括它的主要內容。
+     - GNU計畫原本就是以發展一個自由的作業系統為遠程計畫，但遲遲沒有完成。而Linux核心的出現剛好可以補足這個缺口。
+     - 但Linux核心本身並不是GNU計劃的一部份，GNU/Linux這個名稱在Linux社群中並沒有得到一致認同。
+     - 一些諸如Debian的發行版社群採用了GNU/Linux這一名稱，但許多Linux社群中的成員認為使用Linux這一名稱更好，主張Linux這個名稱朗朗上口，且在公眾與媒體中更為通用。
+     - Linux核心專案的發起人Linus Torvalds偏好於使用Linux，但對於GNU/Linux這個名字並不強烈反感。
+- shell
+  - shell 是提供使用者輸入各種指令(linux command)來執行各種工作 <==我們今天要學一些基本指令
+  - linux有許多不同功能特色的shell ==> bourne Shell﹑C Shell﹑Korn Shell﹑Zsh Shell﹑等等
+  - 今天要學的是 BASH (Bourne Again SHell) == GNU 所加強的一個 Bourne shell 版本﹐ 也是大多數 Linux 套件的預設 shell 
+  - 不同Shell提供大同小異的指令(linux command) 看看 WIKI羅列的shell :[Comparison of command shells](https://en.wikipedia.org/wiki/Comparison_of_command_shells)
+  - 你可以將不同指令(linux command)串在一起寫成程式== > shell programming
+  - Linux Shell programming推薦書籍
+    - 買一本書來學吧 [Linux Shell 程式設計與管理實務 [第三版]【暢銷回饋版】 臥龍小三 博碩文化](https://www.tenlong.com.tw/products/9786263332539?list_name=srh) 
+- lab 實作 [如何查詢 Linux 的發行版名稱與版本？](https://blog.gtwang.org/linux/find-linux-distribution-name-version-number/)
+  - 檢查你使用中的linux核心: 打開terminal  ==> 輸入 uname -a
+  - 打開terminal  ==> 輸入 bash --version
+  - 查詢 Linux 發行版與版本 ==>  ls -l /etc/*-release  ==> cat /etc/lsb-release     cat /etc/os-release
+  - 使用 lsb_release 指令查詢 ==> lsb_release -a
+  - cat /proc/version
+- 有時間也可以學學Windows Shell
+  - 微軟Windows 作業系統有兩種Shell:
+    - (1)cmd shell == > 提供超過280+以上的命令列指令(Windows Command Line Commands)
+      - [微軟官方的命令列指令(Windows Command Line Commands)清單(以英文字母順序排列)](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+    - (2)powershell(Windows 要一統江湖的巨作,也可以安裝到Linux) 
+      - [微軟官方的線上文件(PowerShell online documentation)](https://learn.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7.3) 
+      - 買一本書來學吧 [PowerShell 流程自動化攻略 (Powershell for Sysadmins: A Hands-On Guide to Automating Your Workflow)](https://www.tenlong.com.tw/products/9789865026677?list_name=srh)
+
+## 3_Linux發行版本(distributions) [WIKI說明](https://en.wikipedia.org/wiki/Linux_distribution)
+- Linux核心是由Linus Torvalds和主管維護者Greg Kroah-Hartman所維護
+- 各發行公司依照不同需求整合許多軟體套件成為Linux發行版本(distributions)
+- WIKI有一份資料可以看看[List of Linux distributions](https://en.wikipedia.org/wiki/List_of_Linux_distributions)
+- 每年都有許多報導XXX最佳的Linux發行版本 可以參考看看
+  - [16 Best Digital Forensics Tools & Software](https://www.esecurityplanet.com/products/digital-forensics-software/)
+  - [Best Open-Source Distributions for Pentesting and Forensics](https://www.esecurityplanet.com/products/open-source-distros-for-pentesting-and-forensics/) 
+- [Ubuntu](https://zh.wikipedia.org/zh-tw/Ubuntu)
+  - Ubuntu是以桌面應用為主的Linux發行版，基於Debian。
+  - Ubuntu有許多正式版本: [官方網址](https://ubuntu.com/#download)
+    - 電腦版Ubuntu Desktop
+    - 伺服器版Ubuntu Server
+    - 用於物聯網裝置和機器人的Core版。Ubuntu for IoT
+    - 雲端版本Ubuntu Cloud
+  - Ubuntu是著名的Linux發行版之一，也是目前最多使用者的Linux版本。
+  - 我們都使用[長期支援版本 Long-term support,LTS](https://zh.wikipedia.org/zh-tw/%E9%95%B7%E6%9C%9F%E6%94%AF%E6%8F%B4)
+    - Ubuntu 22.04 LTS
+- 最有名商業發行版本紅帽[Red Hat](https://www.redhat.com/en)
+  - [2019年IBM完成Red Hat 340億美元（約新台幣1.05兆元）收購，重申開放性不變](https://www.ithome.com.tw/news/131758)
+  - 紅帽Red Hat推出許多證照(許多大公司都很重視|底下僅列出幾項) 
+    - [Red Hat Certified System Administrator (RHCSA) Exam (EX200)](https://www.redhat.com/en/services/certification/rhcsa?pfe-43z5tls4x=skills)
+    - [Red Hat Certified Engineer(RHCE)](https://www.redhat.com/en/services/certification/rhce)
+    - [Red Hat® Certified Architect (RHCA)](https://www.redhat.com/en/services/certification/rhca?pfe-309tx42fn=rhce)
+    - [更多RED HAT CERTIFICATION證照請參看此網址](https://www.redhat.com/en/services/certifications)
+- 嵌入式Linux(Embedded Linux) 
+  - 皆以Linux核心為基礎，被設計來使用於嵌入式裝置。這類作業系統被廣泛地使用在行動電話、PDA、媒體播放器以及眾多消費性電子裝置中。 
+  - Google的Android
+  - 惠普公司的webOS
+  - OpenWrt
+    - [How To Build A Custom Raspberry Pi Router // OpenWrt on RPi 4](https://www.youtube.com/watch?v=_pBf2hGqXL8)
+- 駭客與資安專家常用的Linux發行版本(Distribution)
+  - Kali Linux <==今天使用的linux 版本
+    - offensive linux ==攻擊型的linux版本
+    - 資安服務公司 滲透測試常用平台
+    - 根據Debian修訂的Linux發行版，被設計用於滲透測試的。
+    - Kali Linux預設安裝了許多滲透測試軟體，包括nmap (埠掃描器)、Wireshark (封包分析器)、John the Ripper (密碼破解),以及Aircrack-ng (無線區域網路滲透測試軟體) 數百種工具。 
+    - [官方網址](https://www.kali.org/)
+    - [官方文件](https://docs.kali.org/)
+  - Parrot Security OS ==> 物聯網與雲端的滲透測試平台
+    - Security GNU/Linux distribution designed with cloud pentesting and IoT security in mind.
+    - [官方網址](https://www.parrotsec.org/)
+  - [SANS SIFT Workstation](https://www.sans.org/apac/)
+    - 國際知名資安教育公司SANS 發行 數位鑑識與入侵回應的Linux平台
+    - The SIFT Workstation is a collection of free and open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings.
+    - 看看他們的資安課程有多貴
+    - 下載來研究研究[下載點](https://www.sans.org/tools/sift-workstation/) 
+  - REMnux: A Linux Toolkit for Reverse-Engineering and Analyzing Malware
+    - 專門設計用來從事逆向工程與分析惡意程式的Linux版本
+    - [官方網址](https://remnux.org/)
+  - Security Onion 2  ==>擁有許多安全工具的Linux發行版本
+    - [官方網址](https://securityonionsolutions.com/)
+    - [官方文件](https://docs.securityonion.net/en/2.3/)
+    - 下載來研究研究[下載點](https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md)
+
+
+# 4_linux目錄結構
+- windows 作業系統目錄結構
+  - Windows 作業系統目錄結構==> 有 C: D:
+  - C:\Windows\System32 ==>  有許多檔案與子目錄 
+  - 更多說明請參閱[Windows系統目錄結構](https://blog.csdn.net/dianqicyuyan/article/details/122075812)
+  - windows常用工具 
+    - 【電腦管理compmgmt】 
+    - 【磁碟管理diskmgmt.msc】
+       - [Windows 10系統中如何開啟磁碟管理](https://www.diskpart.com/tw/article/windows-10-disk-management-7201.html) 
+- Linux 作業系統目錄結構 
+  - 沒有 C: D:
+  - [檔案系統階層標準(Filesystem Hierarchy Standard|FHS)](http://www.pathname.com/fhs/)
+    - 定義了Linux作業系統中的主要目錄及目錄內容
+    - FHS由Linux基金會維護
+    - 當前的版本是2.3(3.0?)，在2004年1月29日公布。
+    - FHS 標準被不少流行的 UNIX 和 UNIX-like 發行版所使用，使用這些系統時常常會用到這些知識。
+    - 一些發行版可能不完全遵守這樣的條例，也有些使用符號連結之類的形式以便自定義系統。然而，這些方式得到的文件系統結構實際上與 FHS 差別不大。
+    - [WIKI](https://zh.wikipedia.org/zh-tw/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E6%A0%87%E5%87%86) 
+  - 最上層目錄 /
+  - /etc  ==> Etcetera(等等) 的縮寫 | 存放所有的系統管理所需要的設定檔和子目錄
+    - /etc/passwd 
+  - /bin  ==> Binaries (二進位檔案) 的縮寫 | 存放著最經常使用的命令
+  - /sbin ==> Superuser Binaries (超級使用者的二進位檔案) 的縮寫| 存放 系統管理員使用的系統管理程式。
+  - /boot ==> 啟動 Linux 時使用的一些核心檔，包括一些連接檔以及鏡像檔
+  - /dev ==> Device(設備) 的縮寫 | 存放的是 Linux 的外部設備
+  - /root ==> 最高權限使用者(管理者)登入時的目錄
+  - /home ==> 一般使用者登入時的目錄
+    - /home/ksu ==> ksu使用者登入時的目錄   
+  - /lib ==>  Library(庫) 的縮寫  | 存放著系統最基本的動態連接共用庫(類似於 Windows 裡的 DLL 檔)
+  - /lost+found  ==> 一般情況下是空的 | 當系統非法關機後，這裡就存放了一些文件。
+  - /media ==> linux 系統會自動識別一些設備，如USB隨身碟/光碟機等等，當識別後，Linux 會把識別的設備掛載到這個目錄。
+  - /mnt ==> 讓使用者臨時掛載別的檔案系統的| 可以將光碟機掛載在 /mnt/ 上，然後進入該目錄就可以查看光碟機裡的內容了。
+  - /opt ==> optional(可選) 的縮寫 | 給主機額外安裝軟體所擺放的目錄 |預設是空的。
+  - /proc ==> Processes(進程) 的縮寫| /proc 是一種虛擬檔案系統,存儲的是當前內核運行狀態的一系列特殊檔
+    - 這個目錄是一個虛擬的目錄，它是系統記憶體的映射
+    - 我們可以通過直接訪問這個目錄來獲取系統資訊。
+    - 這個目錄的內容不在硬碟上而是在記憶體裡，我們也可以直接修改裡面的某些檔
+    - 範例:可通過下面的命令來遮罩主機的ping命令，使別人無法ping你的機器：echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all
+  - /tmp ==> temporary(臨時) 的縮寫 | 來存放一些暫存檔案的。
+  - /var ==> variable(變數) 的縮寫 | 存放著在不斷擴充著的東西 | 習慣將那些經常被修改的目錄放在這個目錄下。包括各種日誌檔(重要)。
+  - /run ==> 暫存檔案系統，存儲系統啟動以來的資訊| 當系統重啟時，這個目錄下的檔應該被刪掉或清除
+  - /srv ==> 存放一些服務啟動之後需要提取的資料。
+  - /usr == >unix shared resources(共用資源) 的縮寫| 非常重要的目錄，使用者的很多應用程式和檔都放在這個目錄下(類似於 windows 下的 program files 目錄)。
+    - /usr/bin == > 使用者使用的應用程式
+    - /usr/sbin == > 超級使用者(root)使用的管理程式和系統守護程式。
+    - /usr/src == > 內核原始程式碼預設的放置目錄。
+  - 其他更多說明請參考LINUX書籍
+
+## 後續研讀建議
+- 作業系統理論(大學資訊課程必修)
+  - 經典教材:[恐龍書  作業系統, 10/e (授權經銷版)(Silberschatz: Operating System Concepts, 10/e)](https://www.tenlong.com.tw/products/9789865522506?list_name=srh)
+- ["Andy" Tanenbaum](https://www.wikiwand.com/zh-tw/%E5%AE%89%E5%BE%B7%E9%B2%81%C2%B7%E6%96%AF%E5%9B%BE%E5%B0%94%E7%89%B9%C2%B7%E5%A1%94%E8%83%BD%E9%B2%8D%E5%A7%86)經典教科書
+  - [Computer Networks, 6/e](https://www.tenlong.com.tw/products/9781292374062?list_name=trs-o) [計算機網路:第六版(簡體中文版)](https://www.tenlong.com.tw/products/9787302604716?list_name=srh) 
