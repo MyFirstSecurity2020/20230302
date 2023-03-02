@@ -25,7 +25,8 @@
   - 另一種解法 請參閱 [如何在Word中快速顯示或隱藏所有隱藏的文本？](https://zh-tw.extendoffice.com/documents/word/906-word-show-hide-hidden-text.html) 
 - 【自行完成】{隱寫術101::STEG2_Secret in PDF}
 
-## Linux資安技術入門:  教學環境 ==> 本課程使用Kali Linux
+# Linux資安技術入門
+- 教學環境 ==> 本課程使用Kali Linux
 ## 1.快速認識Linux作業系統 [線上教材](./Linux/1.基礎linux入門.MD) [[YOUTUBE教學錄影]](https://youtu.be/0T4o81Vghio)
   - 幾種學習LINUX的方式:
     - 連線到LINUX CTF去學習[本次課程會用到]
