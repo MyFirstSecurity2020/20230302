@@ -1,4 +1,4 @@
-# Linux資安技術入門 [[請先點選觀看~課程說明與進行方式]]()
+# Linux資安技術入門 [[請先點選觀看~課程說明與進行方式]](https://youtu.be/2Z_pU7tBgBI)
 - 本次課程協助學生使用虛擬化技術(在Windows作業系統上安裝Virtualbox,然後匯入linux)學習linux
 - 預先作業自建實體教學環境:本課程使用虛擬機匯入Kali Linux進行教學
   - 步驟1:在你的電腦下載 [virtual box](https://www.virtualbox.org/wiki/Downloads) 並安裝完成 [Virtualbox安裝:YOUTUBE影片](https://youtu.be/FC0CX71aGnc)
