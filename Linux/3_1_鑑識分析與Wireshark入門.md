@@ -38,5 +38,6 @@
 
 
 # 後續延伸研讀
+- [實戰 Linux 系統數位鑑識 (Practical Linux Forensics: A Guide for Digital Investigators) Bruce Nikkel 著 江湖海 譯](https://www.tenlong.com.tw/products/9786263242876?list_name=srh)
 - [實戰封包分析｜使用 Wireshark, 3/e (支援IPv6與Wifi)](https://www.tenlong.com.tw/products/9789864766574?list_name=trs-t)
 - [網路分析完全實戰手冊 ─ 使用 Wireshark, 2/e](https://www.tenlong.com.tw/products/9789864343973?list_name=srh)
