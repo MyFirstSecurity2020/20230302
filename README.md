@@ -21,7 +21,7 @@
 
 # 開場白[[0211課程的錄影]](https://youtu.be/YvQH03hj8mI)
 # CTF 入門
-- CTF 入門:透過參與CTF搶旗大賽學習資安實務 [線上課程]
+- CTF 入門:透過參與CTF搶旗大賽學習資安實務 [[線上教材]](./CTF.md) [[YOUTUBE教學錄影]](https://youtu.be/Bcxyx3lJG8w)
   - CTF搶旗大賽
   - 註冊與登入CTF
   - 起手式---文件隱寫術之word隱身術{隱寫術101::STEG1}
