@@ -7,7 +7,7 @@
     - 本課程會用到的Kali Linux(比較舊的版本2019) [下載點](https://drive.google.com/file/d/1m620Z7KAOSUOLdFH92FYLE2NINb-vJsn/view?usp=sharing)
     - Python會用到的Ubuntu Linux 18.04 LTS(已安裝好pwntools)  [下載點](https://drive.google.com/file/d/1aP-qCFP6jKsGYXtKy9ahwZleQSENEi7C/view?usp=sharing)
     - [其他linux版本下載](https://ksunextcloud.duckdns.org/index.php/s/mXWBcNaYMrcoL9Y) 
-      - Ubuntu 22.04 Server.ova  |  Ubuntu 22.04 Desktop.ova  | CentOS 7 Desktop.ova  | Kali Linux.ova(2022.4)
+      - Ubuntu 22.04 Desktop.ova  | CentOS 7 Desktop.ova  | Kali Linux.ova(2022.4)
   - 步驟3:匯入你要用的linux  [[YOUTUBE教學錄影]](https://youtu.be/GTpQR7fZcwE)
 - 學生預先作業:請學生預先申請你的 [github](https://github.com/)  ~ 請上網Google 一下申請辦法
 
