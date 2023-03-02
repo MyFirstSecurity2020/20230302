@@ -6,7 +6,7 @@
     - 本課程會用到的Kali Linux(比較舊的版本2019) [下載點](https://drive.google.com/file/d/1m620Z7KAOSUOLdFH92FYLE2NINb-vJsn/view?usp=sharing)
     - Python會用到的Ubuntu Linux 18.04 LTS(已安裝好pwntools)  [下載點](https://drive.google.com/file/d/1aP-qCFP6jKsGYXtKy9ahwZleQSENEi7C/view?usp=sharing)
     - 其他linux版本下載
-      - [Ubuntu 22.04 Desktop.ova](https://drive.google.com/file/d/1H8PJ80jzbmQ3P7cGMGdpBofMjqYa3yMp/view?usp=sharing)  | Kali Linux.ova(2022.4)
+      - [Ubuntu 22.04 Desktop.ova](https://drive.google.com/file/d/1H8PJ80jzbmQ3P7cGMGdpBofMjqYa3yMp/view?usp=sharing)  | [Kali Linux.ova(2022.4)]()
   - 步驟3:匯入你要用的linux  [[YOUTUBE教學錄影]](https://youtu.be/GTpQR7fZcwE)
 - 學生預先作業:請學生預先申請你的 [github](https://github.com/)  ~ 請上網Google 一下申請辦法
 
@@ -51,7 +51,7 @@
     - 題目:隱寫術101::STEG4  [題目檔案](https://raw.githubusercontent.com/MyFirstSecurity2020/backup/main/steg/steg101/carter.jpg) [解答](https://github.com/MyFirstSecurity2020/SecurityFoscusOnline2023/edit/main/A2_Linux%E8%B3%87%E5%AE%89%E6%8A%80%E8%A1%93%E5%85%A5%E9%96%80/2.%E9%9A%B1%E5%AF%AB%E8%A1%93%E5%85%A5%E9%96%80/3_%E5%9C%96%E7%89%87%E9%9A%B1%E5%AF%AB%E8%A1%93%E4%B9%8B2_%E5%9C%96%E7%89%87%E5%85%A7%E5%B5%8C%E8%A7%A3%E7%AD%94%E5%9C%96%E7%89%87%E7%9A%84%E8%A7%A3%E9%A1%8C.md) [[YOUTUBE教學影片]](https://youtu.be/GLpg4rTmiqg)
   - 2.4_圖片隱寫術之3:圖片的metadata{隱寫術101::STEG5} [解答](https://github.com/MyFirstSecurity2020/SecurityFoscusOnline2023/blob/main/A2_Linux%E8%B3%87%E5%AE%89%E6%8A%80%E8%A1%93%E5%85%A5%E9%96%80/2.%E9%9A%B1%E5%AF%AB%E8%A1%93%E5%85%A5%E9%96%80/4_%E5%9C%96%E7%89%87%E9%9A%B1%E5%AF%AB%E8%A1%93%E4%B9%8B3_%E5%9C%96%E7%89%87%E7%9A%84metadata.md)
 ## 3.Linux 鑑識分析入門 == >  完成 【Network101 】 解題
-  - 3.1.鑑識分析與Wireshark入門 [線上教材](./Linux/3_1_鑑識分析與Wireshark入門.md)
+  - 3.1.鑑識分析與Wireshark入門 [線上教材](./Linux/3_1_鑑識分析與Wireshark入門.md) [[YOUTUBE教學影片]]()
   - 3.2.網路鑑識分析第一步:使用linux指令進行分析[線上教材](./Linux/3_2_網路鑑識分析第一步_使用linux基本指令進行分析.md) [[YOUTUBE教學影片]](https://youtu.be/IL0R7u7W9dk)
     - linux指令: file | strings | grep
     - Network101::NET1
