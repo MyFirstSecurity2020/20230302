@@ -24,6 +24,7 @@
 - Wireshark（前稱Ethereal）是一個免費開源的網路封包分析(network protocol analyzer)軟體
 - 最常見功能就是截取(capture)網路封包，並盡可能顯示出最為詳細的網路封包資料。
 
+![wireshark.JPG](./Linux/wireshark.JPG)
 ## Wireshark使用情境:
 - 網路管理員使用Wireshark來檢測網路問題
 - 網路安全工程師使用Wireshark來檢查資訊安全相關問題
