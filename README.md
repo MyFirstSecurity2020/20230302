@@ -27,7 +27,7 @@
 
 # Linux資安技術入門
 - 教學環境 ==> 本課程使用Kali Linux
-## 1.快速認識Linux作業系統 [線上教材](./Linux/1.基礎linux入門.MD) [[YOUTUBE教學錄影]](https://youtu.be/0T4o81Vghio)
+## 1.快速認識Linux作業系統 [線上教材](./Linux/1_1.基礎linux入門.MD) [[YOUTUBE教學錄影]](https://youtu.be/0T4o81Vghio)
   - 幾種學習LINUX的方式:
     - 連線到LINUX CTF去學習[本次課程會用到]
     - 使用虛擬機匯入LINUX學習[本次課程會用到]
